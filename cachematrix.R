@@ -1,4 +1,4 @@
-
+#returns a list with some methods which can be used for caching
 makeCacheMatrix <- function(x = matrix()) {
     invX <- NULL
     set <- function(y){
@@ -20,8 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Write a short comment describing this function
-
+##returns an inverse of the matrix from the cache if is is available in the cache. Else 
+##creates the inverse, caches the inverse and returns the inverse of the matrix
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     invX <- x$getInv()
